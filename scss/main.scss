@@ -9,17 +9,16 @@ body {
   height: 90vh;
   background-repeat: no-repeat;
   // background: linear-gradient(to right, rgb(246, 209, 177),rgb(238, 221, 206))
-      // center top;
+  // center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   p {
-    padding-top: 5rem;
+    padding-top: 10rem;
     color: rgb(115, 84, 57);
     font-size: 1.8rem;
     font-weight: 700;
   }
 }
-
