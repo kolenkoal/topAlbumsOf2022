@@ -1,15 +1,25 @@
 @import './header';
 @import './config';
-
+@import './section';
 body {
   font-family: 'Poppins', sans-serif;
 }
 
 .main {
-  min-height: 90vh;
-  display: flex;
-  width: 100vh;
+  height: 90vh;
   background-repeat: no-repeat;
-  background:linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/space.jpg") center top;
+  // background: linear-gradient(to right, rgb(246, 209, 177),rgb(238, 221, 206))
+      // center top;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  p {
+    padding-top: 5rem;
+    color: rgb(115, 84, 57);
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
 }
+

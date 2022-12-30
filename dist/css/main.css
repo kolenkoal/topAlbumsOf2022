@@ -54,15 +54,49 @@
   box-sizing: border-box;
 }
 
+.parts {
+  padding-top: 5%;
+  align-items: center;
+}
+.parts ul {
+  display: flex;
+  justify-content: space-around;
+}
+.parts li {
+  list-style: none;
+  margin: 0 4rem;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+.parts li a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 3rem;
+  color: black;
+  background: linear-gradient(to right, rgb(119, 72, 6), rgb(218, 132, 19));
+  border: 0.3rem solid wheat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
 .main {
-  min-height: 90vh;
-  display: flex;
-  width: 100vh;
+  height: 90vh;
   background-repeat: no-repeat;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/space.jpg") center top;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main p {
+  padding-top: 5rem;
+  color: rgb(115, 84, 57);
+  font-size: 1.8rem;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
