@@ -11,6 +11,9 @@
   background: linear-gradient(to right, rgb(160, 120, 85), rgb(184, 137, 97));
   min-height: 6vh;
 }
+.header a {
+  text-decoration: none;
+}
 .header img {
   width: 25%;
   border-radius: 4rem;
@@ -92,6 +95,8 @@ footer {
   font-size: 1.5rem;
   color: rgb(119, 72, 6);
   font-weight: 700;
+  bottom: 10%;
+  position: relative;
 }
 
 * {
@@ -103,6 +108,7 @@ footer {
 }
 
 .welcoming {
+  color: rgb(119, 72, 6);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -112,18 +118,29 @@ footer {
   font-weight: bold;
 }
 
-.review {
+.review, .ending {
+  color: rgb(119, 72, 6);
   padding: 2rem;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.review h3 {
+.review h3, .ending h3 {
   font-weight: bold;
+}
+.review-text, .ending-text {
+  max-width: 60%;
+  line-height: 0.8cm;
+  padding: 10px;
+}
+.review-text a, .ending-text a {
+  color: black;
 }
 
 .album-cover {
-  padding: 0.2rem 0;
+  padding: 1rem 0;
   max-width: 30%;
   display: flex;
   align-items: center;
@@ -145,6 +162,7 @@ body {
 }
 .main p {
   padding-top: 10rem;
+  max-width: 75%;
   color: rgb(119, 72, 6);
   font-size: 1.8rem;
   font-weight: 700;
