@@ -149,12 +149,38 @@ footer {
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(-45deg, #eda791, #e499b6, #87d5f1, #6ceacc);
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
 }
 
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .main {
   height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,7 +189,10 @@ body {
 .main p {
   padding-top: 10rem;
   max-width: 75%;
-  color: rgb(119, 72, 6);
+  background: white;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 1.8rem;
   font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
