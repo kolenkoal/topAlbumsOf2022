@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to right, rgb(160, 120, 85), rgb(184, 137, 97));
+  /*background: linear-gradient(to right, rgb(160, 120, 85),rgb(184, 137, 97)); */
   min-height: 6vh;
 }
 .header a {
@@ -24,10 +24,11 @@
   vertical-align: middle;
   justify-content: center;
   letter-spacing: 4px;
-  background: linear-gradient(to right, rgb(230, 159, 60), rgb(239, 209, 168));
+  background: linear-gradient(to right, rgb(120, 82, 28), rgb(138, 121, 96));
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .nav {
@@ -45,7 +46,8 @@
 .nav li a {
   text-decoration: none;
   color: black;
-  background: linear-gradient(to right, rgb(226, 150, 44), rgb(239, 209, 168));
+  background: linear-gradient(to right, rgb(148, 98, 28), rgb(135, 117, 92));
+  font-weight: bold;
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
