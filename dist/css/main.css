@@ -149,7 +149,7 @@ footer {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(-45deg, #eda791, #e499b6, #87d5f1, #6ceacc);
+  background: linear-gradient(-45deg, #ec9d85, #f5adc9, #a0dbf0, #9dedda);
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
   background-repeat: no-repeat;
@@ -189,10 +189,7 @@ body {
 .main p {
   padding-top: 10rem;
   max-width: 75%;
-  background: white;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(119, 72, 6);
   font-size: 1.8rem;
   font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
