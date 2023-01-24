@@ -1,9 +1,19 @@
 @import "config";
 
-@media (max-width: 1228px) {
-  .parts {
-    ul {
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+      &-nav {
 
-    }
+        &-menu {
+          flex-direction: column;
+
+          &-item {
+            & + & {
+              padding-left: 0;
+            }
+          }
+        }
+      }
   }
 }

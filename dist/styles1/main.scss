@@ -13,6 +13,7 @@ body {
   background-size: 400% 400%;
   max-width: 2560px;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0 50%;
@@ -31,7 +32,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  p {
+
+  &-welcome{
     padding-top: 10rem;
     max-width: 75%;
     color: rgb(119, 72, 6);

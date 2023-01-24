@@ -5,15 +5,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
-  max-width: 2560px;
   width: 100%;
-  height: 80px;
+  max-height: 80px;
 
   &-logo {
     padding-top: 10px;
-    align-items: center;
-    justify-content: center;
 
     a {
       text-decoration: none;
@@ -25,48 +21,31 @@
     }
   }
 
-  &-title {
-    padding-left: 150px;
-    h1 {
-      font-size: 25px;
-      font-weight: 700;
-      letter-spacing: 4px;
-      background: linear-gradient(to right, rgb(120, 82, 28), rgb(138, 121, 96));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-
   &-nav {
-    ul {
+
+    &-menu {
       list-style: none;
       display: flex;
-    }
 
-    li + Li {
-        padding-left: 40px;
-    }
-
-    li {
-
-
-      //display: inline-block;
-      font-weight: bold;
-
-
-
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 25px;
-        background: linear-gradient(
-                        to right,
-                        rgb(148, 98, 28),
-                        rgb(135, 117, 92)
-        );
+      &-item {
         font-weight: bold;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+
+        & + & {
+          padding-left: 40px;
+        }
+
+        &-link {
+          text-decoration: none;
+          font-size: 25px;
+          background: linear-gradient(
+                          to right,
+                          rgb(148, 98, 28),
+                          rgb(135, 117, 92)
+          );
+          font-weight: bold;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
     }
   }

@@ -8,15 +8,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
-  max-width: 2560px;
   width: 100%;
-  height: 80px;
+  max-height: 80px;
 }
 .header-logo {
   padding-top: 10px;
-  align-items: center;
-  justify-content: center;
 }
 .header-logo a {
   text-decoration: none;
@@ -25,30 +21,18 @@
   border-radius: 4rem;
   cursor: pointer;
 }
-.header-title {
-  padding-left: 150px;
-}
-.header-title h1 {
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  background: linear-gradient(to right, rgb(120, 82, 28), rgb(138, 121, 96));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.header-nav ul {
+.header-nav-menu {
   list-style: none;
   display: flex;
 }
-.header-nav li + Li {
-  padding-left: 40px;
-}
-.header-nav li {
+.header-nav-menu-item {
   font-weight: bold;
 }
-.header-nav li a {
+.header-nav-menu-item + .header-nav-menu-item {
+  padding-left: 40px;
+}
+.header-nav-menu-item-link {
   text-decoration: none;
-  color: black;
   font-size: 25px;
   background: linear-gradient(to right, rgb(148, 98, 28), rgb(135, 117, 92));
   font-weight: bold;
@@ -68,6 +52,17 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }
+  .header-nav-menu {
+    flex-direction: column;
+  }
+  .header-nav-menu-item + .header-nav-menu-item {
+    padding-left: 0;
+  }
+}
 .parts {
   display: flex;
   padding-top: 10rem;
@@ -109,14 +104,6 @@ footer {
   position: relative;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-}
-
 .welcoming {
   color: rgb(119, 72, 6);
   display: flex;
@@ -144,9 +131,6 @@ footer {
   max-width: 60%;
   line-height: 0.8cm;
   padding: 10px;
-}
-.review-text a, .ending-text a {
-  color: black;
 }
 
 .album-cover {
@@ -184,7 +168,7 @@ body {
   align-items: center;
   text-align: center;
 }
-.main p {
+.main-welcome {
   padding-top: 10rem;
   max-width: 75%;
   color: rgb(119, 72, 6);
