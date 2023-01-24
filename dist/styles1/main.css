@@ -8,53 +8,48 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   max-width: 2560px;
+  width: 100%;
   height: 80px;
 }
 .header-logo {
   padding-top: 10px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 .header-logo a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header a {
   text-decoration: none;
 }
-.header img {
-  max-width: 80px;
+.header-logo img {
   border-radius: 4rem;
   cursor: pointer;
 }
+.header-title {
+  padding-left: 150px;
+}
 .header-title h1 {
-  text-align: center;
-  vertical-align: middle;
-  justify-content: center;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 4px;
   background: linear-gradient(to right, rgb(120, 82, 28), rgb(138, 121, 96));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.header-nav {
-  align-items: center;
-}
 .header-nav ul {
+  list-style: none;
   display: flex;
-  justify-content: space-around;
+}
+.header-nav li + Li {
+  padding-left: 40px;
 }
 .header-nav li {
-  list-style: none;
-  margin: 0 1rem;
   font-weight: bold;
 }
 .header-nav li a {
   text-decoration: none;
   color: black;
+  font-size: 25px;
   background: linear-gradient(to right, rgb(148, 98, 28), rgb(135, 117, 92));
   font-weight: bold;
   -webkit-background-clip: text;
