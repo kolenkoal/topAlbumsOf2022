@@ -20,7 +20,7 @@
       border: 0.3rem solid rgb(201, 154, 66);
       border-image: linear-gradient(to right, rgb(218, 132, 19), rgb(119, 72, 6));
       border-image-slice: 1;
-      background-clip: text;
+      -webkit-background-clip:  text;
       -webkit-text-fill-color: transparent;
     }
   }

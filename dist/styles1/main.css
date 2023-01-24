@@ -8,14 +8,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /*background: linear-gradient(to right, rgb(160, 120, 85),rgb(184, 137, 97)); */
-  min-height: 6vh;
+  max-width: 2560px;
 }
 .header a {
   text-decoration: none;
 }
 .header img {
-  width: 25%;
+  max-width: 30%;
   border-radius: 4rem;
   cursor: pointer;
 }
@@ -26,7 +25,6 @@
   letter-spacing: 4px;
   background: linear-gradient(to right, rgb(120, 82, 28), rgb(138, 121, 96));
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
@@ -49,7 +47,6 @@
   background: linear-gradient(to right, rgb(148, 98, 28), rgb(135, 117, 92));
   font-weight: bold;
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -81,11 +78,9 @@
   color: black;
   background: linear-gradient(to right, rgb(119, 72, 6), rgb(218, 132, 19));
   border: 0.3rem solid rgb(201, 154, 66);
-  -o-border-image: linear-gradient(to right, rgb(218, 132, 19), rgb(119, 72, 6));
-     border-image: linear-gradient(to right, rgb(218, 132, 19), rgb(119, 72, 6));
+  border-image: linear-gradient(to right, rgb(218, 132, 19), rgb(119, 72, 6));
   border-image-slice: 1;
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -152,33 +147,21 @@ footer {
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(-45deg, #ec9d85, #f5adc9, #a0dbf0, #9dedda);
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
   background-repeat: no-repeat;
   background-size: 400% 400%;
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  max-width: 2560px;
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
 }
 .main {
@@ -194,4 +177,6 @@ body {
   color: rgb(119, 72, 6);
   font-size: 1.8rem;
   font-weight: 700;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

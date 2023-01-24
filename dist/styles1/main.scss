@@ -1,8 +1,8 @@
-@import './header';
-@import './config';
-@import './section';
-@import './footer';
-@import './partsstyle';
+@import 'header';
+@import 'config';
+@import "section";
+@import 'footer';
+@import 'partstyle';
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -10,17 +10,18 @@ body {
   animation: gradient 15s ease infinite;
   background-repeat: no-repeat;
   background-size: 400% 400%;
+  max-width: 2560px;
 }
 @keyframes gradient {
   0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .main {
