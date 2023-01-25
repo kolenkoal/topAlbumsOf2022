@@ -1,43 +1,19 @@
-@import 'header';
-@import 'config';
-@import "telephone";
-@import "section";
-@import 'footer';
-@import 'partstyle';
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(-45deg, #ec9d85, #f5adc9, #a0dbf0, #9dedda);
-  animation: gradient 15s ease infinite;
-  background-repeat: no-repeat;
-  background-size: 400% 400%;
-  max-width: 2560px;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
-
 .main {
-  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-width: calc(100% - 2*50px);
+  margin: 100px auto 0;
+
 
   &-welcome{
-    padding-top: 10rem;
-    max-width: 75%;
-    color: rgb(119, 72, 6);
-    font-size: 1.8rem;
+    margin: 0 auto;
+    max-width: calc(100% - 2*70px);
+    //color: rgb(119, 72, 6);
+    color: #000;
+    font-size: 35px;
+    line-height: 1.7;
     font-weight: 700;
   }
 }

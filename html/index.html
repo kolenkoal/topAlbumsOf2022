@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../dist/styles1/main.css">
+    <link rel="stylesheet" href="../css/config.css">
 
 </head>
 
@@ -23,41 +23,34 @@
 
         </span>
     </div> -->
-<!--    <div class="header-title">-->
-<!--        <h1>Top 30 albums of 2022</h1>-->
-<!--    </div>-->
+    <!--    <div class="header-title">-->
+    <!--        <h1>Top 30 albums of 2022</h1>-->
+    <!--    </div>-->
     <div class="header-nav">
-        <ul class="header-nav-menu">
-            <li class="header-nav-menu-item">
-                <a href="firstpart.html" class="header-nav-menu-item-link">First part</a>
-            </li>
-            <li class="header-nav-menu-item">
-                <a href="secondpart.html" class="header-nav-menu-item-link">Second part</a>
-            </li>
-            <li class="header-nav-menu-item">
-                <a href="thirdpart.html" class="header-nav-menu-item-link">Third part</a>
-            </li>
-        </ul>
+        <a href="firstpart.html" class="header-nav-item">First part</a>
+        <a href="secondpart.html" class="header-nav-item">Second part</a>
+        <a href="thirdpart.html" class="header-nav-item">Third part</a>
     </div>
 </header>
 
 <main class="main">
-    <p class="main-welcome">Добро пожаловать на сайт, посвященный музыке, вышедшей в 2022 году. <br>В этом году вышло
-        огромное
-        количество выдающихся альбомов,
-        которые заслуживают вашего внимания. <br> Именно поэтому я бы хотел высказать личное мнение о них, а также
-        попрактиковаться в HTML и CSS, а и может в JavaScript.<br> Надеюсь, что вам понравится данный топ!<br> Ниже
-        расположена навигация по страницам, а именно по частям этого топа.</p>
-
+    <section class="main-welcome">
+        <p>Добро пожаловать на сайт, посвященный музыке, вышедшей в 2022 году. В этом году вышло
+            огромное
+            количество выдающихся альбомов,
+            которые заслуживают вашего внимания. Именно поэтому я бы хотел высказать личное мнение о них, а также
+            попрактиковаться в HTML и CSS, а и может в JavaScript. Надеюсь, что вам понравится данный топ! Ниже
+            расположена навигация по страницам, а именно по частям этого топа.</p>
+    </section>
     <section class="parts">
-        <ul>
-            <li class="part1"><a href="firstpart.html">First Part</a></li>
-            <li class="part2"><a href="secondpart.html">Second Part</a></li>
-            <li class="part3"><a href="thirdpart.html">Third Part</a></li>
+        <ul class="parts-list">
+            <li class="parts-list-item"><a class="parts-list-item-link" href="firstpart.html">First Part</a></li>
+            <li class="parts-list-item"><a class="parts-list-item-link" href="secondpart.html">Second Part</a></li>
+            <li class="parts-list-item"><a class="parts-list-item-link" href="thirdpart.html">Third Part</a></li>
         </ul>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <div class="social-media">
         <a href="#!">
             <i class="social-media github"></i>

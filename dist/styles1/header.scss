@@ -1,19 +1,14 @@
-@import "config";
-
-
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-height: 80px;
+  margin: 0 auto;
+  max-width: calc(100% - 2 * 48px);
+  padding-top: 28px;
 
   &-logo {
-    padding-top: 10px;
-
-    a {
-      text-decoration: none;
-    }
+    width: 80px;
+    height: 80px;
 
     img {
       border-radius: 4rem;
@@ -22,31 +17,33 @@
   }
 
   &-nav {
+    display: flex;
+    align-items: center;
 
-    &-menu {
-      list-style: none;
-      display: flex;
 
-      &-item {
-        font-weight: bold;
+    &-item {
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 25px;
+      color: #000;
+      text-transform: uppercase;
 
-        & + & {
-          padding-left: 40px;
-        }
-
-        &-link {
-          text-decoration: none;
-          font-size: 25px;
-          background: linear-gradient(
-                          to right,
-                          rgb(148, 98, 28),
-                          rgb(135, 117, 92)
-          );
-          font-weight: bold;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
+      &:hover {
+        opacity: 0.8;
       }
+
+      & + & {
+        padding-left: 40px;
+      }
+
+      //background: linear-gradient(
+      //                to right,
+      //                rgb(148, 98, 28),
+      //                rgb(135, 117, 92)
+      //);
+      //-webkit-background-clip: text;
+      //-webkit-text-fill-color: transparent;
+
     }
   }
 }

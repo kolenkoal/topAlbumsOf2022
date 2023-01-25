@@ -1,7 +1,34 @@
+@import 'header';
+@import 'main';
+@import "telephone";
+@import "section";
+@import 'footer';
+@import 'partstyle';
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-$headerBackground: #7137d6;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #ec9d85, #f5adc9, #a0dbf0, #9dedda);
+  animation: gradient 15s ease infinite;
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
