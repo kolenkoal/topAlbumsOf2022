@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 28px auto 0;
   max-width: calc(100% - 2 * 48px);
-  padding-top: 28px;
 
   &-logo {
     width: 80px;
@@ -33,7 +32,7 @@
       }
 
       & + & {
-        padding-left: 40px;
+        margin-left: 40px;
       }
 
       //background: linear-gradient(
