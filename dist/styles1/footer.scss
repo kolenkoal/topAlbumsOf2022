@@ -1,5 +1,5 @@
 .footer {
-  max-width: calc(100% - 2*50px);
+  max-width: calc(100% - 2 * 50px);
   display: flex;
   align-items: center;
   text-align: center;
@@ -9,4 +9,19 @@
   font-weight: 700;
   color: #000;
   margin: 150px auto 0;
+}
+
+
+@media (max-width: 1070px) {
+  .footer {
+    font-size: 25px;
+  }
+}
+
+
+
+@media (max-width: 913px) {
+  .footer{
+    font-size: 18px;
+  }
 }

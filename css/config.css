@@ -31,6 +31,11 @@
   margin-left: 40px;
 }
 
+@media (max-width: 1070px) {
+  .header-nav-item {
+    font-size: 18px;
+  }
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -48,6 +53,18 @@
   font-weight: 700;
 }
 
+@media (max-width: 1070px) {
+  .main-welcome {
+    margin: 100px auto 0;
+    font-size: 30px;
+  }
+}
+@media (max-width: 913px) {
+  .main-welcome {
+    margin: 50px auto 0;
+    font-size: 20px;
+  }
+}
 @media (max-width: 650px) {
   .header {
     flex-direction: column;
@@ -84,6 +101,16 @@
   color: #000;
 }
 
+@media (max-width: 1070px) {
+  .parts-list-item-link {
+    font-size: 30px;
+  }
+}
+@media (max-width: 913px) {
+  .parts-list-item-link {
+    font-size: 18px;
+  }
+}
 .footer {
   max-width: calc(100% - 100px);
   display: flex;
@@ -96,6 +123,16 @@
   margin: 150px auto 0;
 }
 
+@media (max-width: 1070px) {
+  .footer {
+    font-size: 25px;
+  }
+}
+@media (max-width: 913px) {
+  .footer {
+    font-size: 18px;
+  }
+}
 .welcoming {
   max-width: calc(100% - 140px);
   color: #000;
