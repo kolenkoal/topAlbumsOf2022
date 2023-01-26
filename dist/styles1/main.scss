@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   max-width: calc(100% - 2 * 50px);
-  margin: 150px auto 0;
+  margin: 130px auto 0;
 
 
   &-welcome {
@@ -18,12 +18,7 @@
   }
 }
 
-@media (max-width: 1070px) {
-  .main-welcome {
-    margin: 100px auto 0;
-    font-size: 30px;
-  }
-}
+
 
 
 @media (max-width: 913px) {

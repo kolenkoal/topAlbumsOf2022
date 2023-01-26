@@ -1,6 +1,7 @@
 @media (max-width: 650px) {
   .header {
     flex-direction: column;
+
     &-nav {
 
       &-menu {
@@ -14,4 +15,27 @@
       }
     }
   }
+}
+
+@media (max-width: 1070px) {
+  .header-nav-item {
+    font-size: 18px;
+  }
+
+  .main {
+    margin: 90px auto 0;
+
+    &-welcome {
+      font-size: 30px;
+    }
+  }
+  .parts {
+    margin: 70px auto 0;
+  }
+
+  .footer {
+    margin: 90px auto 0;
+    font-size: 22px;
+  }
+
 }
