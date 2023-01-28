@@ -48,41 +48,6 @@
   font-weight: 700;
 }
 
-@media (max-width: 913px) {
-  .main-welcome {
-    margin: 50px auto 0;
-    font-size: 20px;
-  }
-}
-@media (max-width: 650px) {
-  .header {
-    flex-direction: column;
-  }
-  .header-nav-menu {
-    flex-direction: column;
-  }
-  .header-nav-menu-item + .header-nav-menu-item {
-    padding-left: 0;
-  }
-}
-@media (max-width: 1070px) {
-  .header-nav-item {
-    font-size: 18px;
-  }
-  .main {
-    margin: 90px auto 0;
-  }
-  .main-welcome {
-    font-size: 30px;
-  }
-  .parts {
-    margin: 70px auto 0;
-  }
-  .footer {
-    margin: 90px auto 0;
-    font-size: 22px;
-  }
-}
 .parts {
   max-width: calc(100% - 140px);
   margin: 150px auto 0;
@@ -107,16 +72,6 @@
   color: #000;
 }
 
-@media (max-width: 1070px) {
-  .parts-list-item-link {
-    font-size: 30px;
-  }
-}
-@media (max-width: 913px) {
-  .parts-list-item-link {
-    font-size: 18px;
-  }
-}
 .footer {
   max-width: calc(100% - 100px);
   display: flex;
@@ -129,11 +84,6 @@
   margin: 130px auto 0;
 }
 
-@media (max-width: 913px) {
-  .footer {
-    font-size: 18px;
-  }
-}
 .welcoming {
   max-width: calc(100% - 140px);
   color: #000;
@@ -170,6 +120,67 @@
   margin-bottom: 50px;
 }
 
+@media (max-width: 1070px) {
+  .header-nav-item {
+    font-size: 18px;
+  }
+  .main {
+    margin: 90px auto 0;
+  }
+  .main-welcome {
+    font-size: 30px;
+  }
+  .parts {
+    margin: 70px auto 0;
+  }
+  .footer {
+    margin: 90px auto 0;
+    font-size: 22px;
+  }
+  .parts-list-item-link {
+    font-size: 30px;
+  }
+}
+@media (max-width: 913px) {
+  .header-nav-item {
+    font-size: 14px;
+  }
+  .main {
+    margin: 50px auto 0;
+  }
+  .main-welcome {
+    font-size: 20px;
+  }
+  .parts {
+    margin: 50px auto 0;
+  }
+  .parts-list-item-link {
+    font-size: 20px;
+  }
+  .footer {
+    margin: 70px auto 0;
+    font-size: 18px;
+  }
+}
+@media (max-width: 724px) {
+  .parts-list-item-link {
+    font-size: 18px;
+  }
+  .footer {
+    font-size: 18px;
+  }
+}
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }
+  .header-nav-menu {
+    flex-direction: column;
+  }
+  .header-nav-menu-item + .header-nav-menu-item {
+    padding-left: 0;
+  }
+}
 * {
   padding: 0;
   margin: 0;
